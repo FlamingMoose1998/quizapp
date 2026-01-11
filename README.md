@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## current setup
+
+1- set up nextjs
+yarn create next-app . --tailwind
+
+2- install shadcn
+npx shadcn@latest init
+
+3- install button component
+npx shadcn@latest add button
+
+4- create links to the data directories
+cd src/data
+mklink /j root "c:\Users\bfransen2\Documents\google-drives\flamingmoose1998\container"
