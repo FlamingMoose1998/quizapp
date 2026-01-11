@@ -50,3 +50,17 @@ npx shadcn@latest add button
 4- create links to the data directories
 cd src/data
 mklink /j root "c:\Users\bfransen2\Documents\google-drives\flamingmoose1998\container"
+
+# git
+Pull from repo:
+
+https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+
+git fetch --all
+git branch backup-main
+git reset --hard origin/main
+
+
+Push to repo:
+git push -f main main
+

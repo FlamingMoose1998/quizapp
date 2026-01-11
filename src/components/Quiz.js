@@ -28,7 +28,7 @@ export default function Quiz({ quizJson }) {
 function QuizHeader({ quizJson }) {
   return (<>
     <div className="text-3xl text-center bg-blue-200 border-solid border-2 rounded-md mx-4 my-2 py-4">
-      <div>{quizJson.name}</div>
+      <div>!! {quizJson.name} !!</div>
       <div className="text-sm">{quizJson.number}</div>
     </div>
   </>)
