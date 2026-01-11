@@ -62,5 +62,6 @@ git reset --hard origin/main
 
 
 Push to repo:
-git push -f main main
+git push origin main --force
+
 
