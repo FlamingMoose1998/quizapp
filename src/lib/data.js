@@ -23,7 +23,9 @@ async function getQuizList() {
 
 async function getQuiz({ name }) {
   try {
-    const quizString = await fs.readFile(`${JSON_DATA_ROOT}/${name}.json`, 'utf-8');
+    const fqName = `${JSON_DATA_ROOT}/${name}.json`;
+    console.log(fqName)
+    const quizString = await fs.readFile(fqName, 'utf-8');
     const quiz = JSON.parse(quizString);
 
     return quiz;

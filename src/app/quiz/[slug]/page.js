@@ -1,5 +1,6 @@
 import { getQuiz } from "@/lib/data.js";
-import Quiz from "@/components/Quiz.js";
+// import Quiz from "@/components/Quiz.js";
+import { Quiz } from "@/components/quiz/Quiz.js";
 
  
 export default async function Page({ params }) {

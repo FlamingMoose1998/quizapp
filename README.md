@@ -54,8 +54,6 @@ cd src/data
 mklink /j root "c:\Users\bfransen2\Documents\google-drives\flamingmoose1998\container"
 
 # git
-https://www.datacamp.com/blog/git-commands?dc_referrer=https%3A%2F%2Fwww.google.com%2F
-
 Pull from repo:
 
 https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
@@ -68,6 +66,11 @@ git reset --hard origin/main
 Push to repo:
 git add .
 git commit -m "description..."
-git push origin main --force
+git push --all origin
+
+Overview of git commands:
+https://www.datacamp.com/blog/git-commands?dc_referrer=https%3A%2F%2Fwww.google.com%2F
+
+
 
 

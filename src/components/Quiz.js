@@ -11,7 +11,7 @@ export default function Quiz({ quizJson }) {
   const [selectedRound, setSelectedRound] = useState(0)
   return (<>
     <QuizHeader quizJson={quizJson} />
-    <div className="grid grid-cols-8 gap-4 gap-y-8 text-center">
+    <div className="flex justify-between">
       {quizJson.rounds.map((roundJson, roundIndex) => (
         <RoundButton
           key={roundIndex}
@@ -28,7 +28,7 @@ export default function Quiz({ quizJson }) {
 function QuizHeader({ quizJson }) {
   return (<>
     <div className="text-3xl text-center bg-blue-200 border-solid border-2 rounded-md mx-4 my-2 py-4">
-      <div>!! {quizJson.name} !!</div>
+      <div>{quizJson.name}</div>
       <div className="text-sm">{quizJson.number}</div>
     </div>
   </>)
