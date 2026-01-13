@@ -4,7 +4,8 @@ import { writeRoundQls } from "@/lib/data.js";
 import { Button } from "../ui/button.jsx";
 import { QuestionList } from "./QuestionList.js";
 
-export function Round({ quizJson, roundIndex }) {
+export function Round({ quizJson, roundNumber }) {
+  const roundIndex = roundNumber - 1;
   const roundJson = quizJson.rounds[roundIndex];
 
   return (<div>

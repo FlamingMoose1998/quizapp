@@ -44,7 +44,7 @@ async function validateQuiz(quizJson){
   valQuiz.valid = valQuiz.valid && valQuiz.valRounds.every(round => round.valid);
   valQuiz.autoFix = valQuiz.valRounds.some(round => round.autoFix);
 
-  console.log('valQuiz', valQuiz)
+  quizJson.valid = valQuiz.valid;
 
   return valQuiz;
 }
@@ -78,6 +78,8 @@ async function validateRound(roundJson, roundId) {
   valRound.valid = valRound.valid && valRound.valQuestions.every(question => question.valid);
   valRound.autoFix = valRound.valQuestions.some(question => question.autoFix);
 
+  roundJson.valid = valRound.valid;
+
   return valRound;
 }
 
@@ -97,6 +99,7 @@ async function validateQuestion(questionJson, questionId){
 
   const valQuestion = ov.getResult().getResult();
   valQuestion.id = questionId;
+  questionJson.valid = valQuestion.valid;
 
   return valQuestion;
 }
